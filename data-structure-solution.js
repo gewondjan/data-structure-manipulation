@@ -30,7 +30,7 @@ var countries = linesFromFileArray.reduce(function (countriesArray, line) {
     cityArray.push(newCityObject);
     var newStateObject = {
         name: line.State,
-        cities: cityArray
+        cities: cityArraygit
     };
 
     //Create a new Country Object
@@ -95,12 +95,6 @@ var countries = linesFromFileArray.reduce(function (countriesArray, line) {
     return countriesArray;
 }, []);
 
-
-// countries.forEach(function (country) {
-//     console.log("Country: " + country.name);
-//     console.log("\tStates: " + )
-
-// });
 
 
 console.log(JSON.stringify(countries, null, 4));
